@@ -1,9 +1,7 @@
 package Star_Printing;
 
 public class Hollow_Rectangle {
-    public static void main(String[] args) {
-        int size = 4;
-
+    public static void loop (int size) {
         for(int row = 1; row <= size; row++) {
             for(int col = 1; col <= size; col++) {
                 if (col == 1 || col == size || row == 1 || row == size) {
@@ -15,6 +13,10 @@ public class Hollow_Rectangle {
             }
             System.out.println();
         }
+    }
+    public static void main(String[] args) {
+        int size = 4;
+        loop(size);
     }
     
 }
